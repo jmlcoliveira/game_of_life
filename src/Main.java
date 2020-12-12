@@ -13,9 +13,10 @@ public class Main {
         GameOfLife game = new GameOfLife(l, c);
         readGame(in, l, c, game);
 
+
         int count = 0;
         while(count < p){
-            System.out.printf(" Transformação: %d\n", count+1);
+            System.out.printf("Transformation: %d\n", count+1);
             game.envolve(/*p*/);
             writeGame(game, l, c);
             System.out.println("-----------------");
